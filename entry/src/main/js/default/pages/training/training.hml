@@ -2,5 +2,5 @@
     <text class="txt">
         Training Page
     </text>
-    <input type="button" name="back" value="previous" class="btn" onclick="clickAction" />
+    <input type="button" name="Restart" value="previous" class="btn" onclick="clickAction" />
 </div>

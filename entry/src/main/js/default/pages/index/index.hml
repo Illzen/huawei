@@ -9,5 +9,5 @@
 
 
     </div>
-    <input type="button" name="button" value="click Me" class="btn" onclick="clickAction" />
+    <input type="button" name="button" value="Start" class="btn" onclick="clickAction" />
 </div>
