@@ -5,12 +5,17 @@ var picker2value = null;
 
 var picker1seconds = null;
 
+var timer1 = null;
+
 export default {
     data: {
         // title: 'World'
         seconds: 0
     },
     clickAction() {
+        clearInterval(timer1);
+        timer1 = null;
+
         router.replace({
             uri: 'pages/index/index'
         });
@@ -34,11 +39,20 @@ export default {
         this.seconds = picker1seconds;
 
     },
+    run1() {
+        this.seconds--;
+        if (this.seconds == 0) {
+            clearInterval(timer1);
+            timer1 = null;
+        }
+    },
     onReady() {
         console.log("training.js/onReady() is evoked");
     },
     onShow() {
         console.log("training.js/onShow() is evoked");
+
+        timer1 = setInterval(this.run1, 1000);
     },
     onDestroy() {
         console.log("training.js/onDestroy() is evoked");
