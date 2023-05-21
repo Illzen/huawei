@@ -1,13 +1,8 @@
-import router from '@system.router';
-
 export default {
     data: {
-        // title: 'World'
+        title: ""
     },
-    clickAction() {
-        router.replace({
-            uri: 'pages/index/index'
-        }
-        );
+    onInit() {
+        this.title = "Hello World";
     }
 }
