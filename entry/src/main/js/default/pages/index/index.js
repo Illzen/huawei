@@ -1,9 +1,8 @@
-
 export default {
     data: {
-        title: 'World'
+        title: "World"
     },
     clickAction() {
-        console.log("I am CLICKED!");
+        console.log("I AM CLICKED!");
     }
 }
