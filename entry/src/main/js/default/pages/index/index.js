@@ -2,7 +2,9 @@ import router from '@system.router';
 
 export default {
     data: {
-        title: "World"
+        picker1range: ["1", "2", "3"],
+        picker1range: ["Slow", "Moderate", "Fast"]
+        // title: "World"
     },
     clickAction() {
         router.replace({
