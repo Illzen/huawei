@@ -57,3 +57,19 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.txt1 {
+    width: 454px;
+    height: 40px;
+    font-size: 38px;
+    margin-bottom: 10px;
+    ;
+}
+
+
+.txt2 {
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
