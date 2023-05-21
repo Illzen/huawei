@@ -1,0 +1,19 @@
+.container {
+    flex-direction: column;
+    width: 454px;
+    height: 454px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    ;
+}
