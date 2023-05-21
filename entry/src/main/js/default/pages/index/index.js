@@ -1,12 +1,12 @@
 import router from '@system.router';
 
 var picker1value = "2";
-var picker2value = "slow";
+var picker2value = "+";
 
 export default {
     data: {
         picker1range: ["1", "2", "3"],
-        picker2range: ["slow", "moderate", "fast"]
+        picker2range: ["+", "++", "+++"]
         // title: "World"
     },
     clickAction() {
