@@ -69,7 +69,6 @@ export default {
         //     picker1seconds = 180;
         // }
 
-
     },
     run1() {
         this.seconds--;
