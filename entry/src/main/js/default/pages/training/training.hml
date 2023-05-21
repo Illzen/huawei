@@ -1,6 +1,6 @@
 <div class="container">
     <text class="txt">
-        Keep for {{seconds}}s
+        Keep for {{seconds}} s
     </text>
     <input type="button" name="Restart" value="previous" class="btn" onclick="clickAction" />
 </div>
