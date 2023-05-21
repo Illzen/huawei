@@ -12,14 +12,6 @@
     text-align: center;
 }
 
-.btn {
-    width: 200px;
-    height: 50px;
-    font-size: 38px;
-    background-color: #000000;
-    border-color: #000000;
-    margin-top: 40px;
-}
 
 .title {
     width: 400px;
@@ -42,4 +34,28 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.txt2 {
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.txt3 {
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #ffa500;
+}
+
+.btn {
+    width: 300px;
+    height: 50px;
+    font-size: 38px;
+    background-color: #000000;
+    border-color: #000000;
+    margin-top: 40px;
 }

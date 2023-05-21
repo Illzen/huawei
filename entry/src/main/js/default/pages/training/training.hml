@@ -4,8 +4,12 @@
     <text class="txt1">
         {{breath}}({{percent}}%)
     </text>
-    <text class="txt2" show='{{isShow}}'>
+    <text class="txt2" if='{{isShow}}'>
         Keeps for another {{seconds}}s
     </text>
+    <text class="txt3" else>
+        Swipe right to check statistics
+    </text>
+    
     <input type="button" name="Restart_btn" value="Restart" class="btn" onclick="clickAction" />
 </div>

@@ -116,5 +116,12 @@ export default {
             timer3 = null;
             this.percent = '100';
         }
+    },
+    toReport1Page(e) {
+        if (e.direction == 'right') {
+            router.replace({
+                uri: 'pages/report1/report1'
+            });
+        }
     }
 }
