@@ -39,17 +39,17 @@ export default {
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
 
-        if (picker2value == 'S') {
+        // if (picker2value == 'S') {
 
-        }
-
-        // if (picker1value == '1') {
-        //     picker1seconds = 60;
-        // } else if (picker1value == '2') {
-        //     picker1seconds = 120;
-        // } else if (picker1value == '3') {
-        //     picker1seconds = 180;
         // }
+
+        if (picker1value == '1') {
+            picker1seconds = 60;
+        } else if (picker1value == '2') {
+            picker1seconds = 120;
+        } else if (picker1value == '3') {
+            picker1seconds = 180;
+        }
 
 
     },
