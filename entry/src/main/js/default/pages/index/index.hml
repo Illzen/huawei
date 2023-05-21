@@ -1,6 +1,13 @@
-<div class="container">
-    <text class="txt">
-        Index Page
-    </text>
-    <input type="button" name="button" value="clickMe" class="btn" onclick="clickAction" />
+<div class="container1">
+    <div class="container2">
+        <picker-view class="pv1" range="{{picker1range}}" selected="1" onchange="changeAction1"/>
+        <text class="txt">
+            min
+        </text>
+        <img src="/common/hm.png" class="img" />
+        <picker-view class="pv2" range="{{picker2range}}" selected="1" onchange="changeAction2"/>
+
+
+    </div>
+    <input type="button" name="button" value="Start" class="btn" onclick="clickAction" />
 </div>

@@ -1,12 +1,21 @@
 import router from '@system.router';
 
+var picker1value = "2";
+var picker2value = "+";
+
 export default {
     data: {
-        title: "World"
+        picker1range: ["1", "2", "3"],
+        picker2range: ["+", "++", "+++"]
+        // title: "World"
     },
     clickAction() {
         router.replace({
-            uri: 'pages/training/training'
+            uri: 'pages/training/training',
+            params: {
+                "data1": picker1value,
+                "data2": picker2value
+            }
         });
     },
     onInit() {
@@ -21,4 +30,12 @@ export default {
     onDestroy() {
         console.log("index.js/onDestroy() is evoked");
     },
+    changeAction1(pv) {
+        console.log("selected item on the left: " + pv.newValue);
+        picker1value = pv.newValue;
+    },
+    changeAction2(pv) {
+        console.log("selected item on the right: " + pv.newValue);
+        picker2value = pv.newValue;
+    }
 }
