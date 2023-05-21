@@ -7,7 +7,6 @@ var picker1seconds = null;
 
 export default {
     data: {
-        // title: 'World'
         seconds: 0
     },
     clickAction() {
@@ -21,7 +20,7 @@ export default {
         console.log("Accepted right selector: " + this.data2);
 
         picker1value = this.data1;
-        picker1value = this.data2;
+        picker2value = this.data2;
 
         if (picker1value == '1') {
             picker1seconds = 60;
