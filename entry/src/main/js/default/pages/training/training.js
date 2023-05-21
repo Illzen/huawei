@@ -10,7 +10,8 @@ var timer1 = null;
 export default {
     data: {
         // title: 'World'
-        seconds: 0
+        seconds: 0,
+        isShow: true
     },
     clickAction() {
         clearInterval(timer1);
@@ -44,6 +45,8 @@ export default {
         if (this.seconds == 0) {
             clearInterval(timer1);
             timer1 = null;
+
+            this.isShow = false;
         }
     },
     onReady() {
