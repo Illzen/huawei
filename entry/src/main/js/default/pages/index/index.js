@@ -6,7 +6,7 @@ var picker2value = "slow";
 export default {
     data: {
         picker1range: ["1", "2", "3"],
-        picker1range: ["slow", "moderate", "fast"]
+        picker2range: ["slow", "moderate", "fast"]
         // title: "World"
     },
     clickAction() {
