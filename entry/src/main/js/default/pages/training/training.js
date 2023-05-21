@@ -16,7 +16,7 @@ export default {
     data: {
         seconds: 0,
         isShow: true,
-        breath: "breath in",
+        breath: "Breath in",
         percent: "0",
         duration: "",
         count: "",
