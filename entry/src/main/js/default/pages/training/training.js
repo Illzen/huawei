@@ -40,8 +40,13 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
-        picker1value = this.key1;
-        picker2value = this.key2;
+//        picker1value = this.key1;
+//        picker2value = this.key2;
+
+        // To breathe in
+        picker1value = this.data1;
+        picker2value = this.data2;
+
 
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
