@@ -8,6 +8,7 @@ var picker2seconds = null;
 
 var timer1 = null;
 var timer2 = null;
+var timer3 = null;
 
 var counter = 0;
 
@@ -23,6 +24,9 @@ export default {
 
         clearInterval(timer2);
         timer2 = null;
+
+        clearInterval(timer3);
+        timer3 = null;
 
         router.replace({
             uri: 'pages/index/index'
@@ -74,6 +78,7 @@ export default {
 
         timer1 = setInterval(this.run1, 1000);
         timer2 = setInterval(this.run2, picker2seconds * 1000);
+        timer3 = setInterval(this.run3, picker2seconds / 100 * 1000);
     },
     onDestroy() {
         console.log("training.js/onDestroy() is evoked");
@@ -92,6 +97,19 @@ export default {
                 this.breath = 'breath in'
             }
         }
+    },
+    run3() {
+        this.percent = (parseInt(this.percent) + 1).toString();
+        if (parseInt(this.percent) < 10) {
+            this.percent = "0" + this.percent;
+        }
+        if (parseInt(this.percent) == 100) {
+            this.percent = "0";
+        }
+        if (timer2 == null) {
+            clearInterval(timer3);
+            timer3 = null;
+            this.percent = '100';
+        }
     }
-
 }

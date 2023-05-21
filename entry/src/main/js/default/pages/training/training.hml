@@ -1,7 +1,6 @@
 <div class="container">
-
     <text class="txt1">
-        {{breath}}
+        {{breath}}({{percent}}%)
     </text>
     <text class="txt2" show='{{isShow}}'>
         Keeps for another {{seconds}}s
