@@ -23,4 +23,10 @@ export default {
     onDestroy() {
         console.log("index.js/onDestroy() is evoked");
     },
+    changeAction1(pv) {
+        console.log("selected item on the left: " + pv.newValue);
+    },
+    changeAction2(pv) {
+        console.log("selected item on the right: " + pv.newValue);
+    }
 }
