@@ -38,7 +38,7 @@ export default {
         console.log("Accepted right selector: " + this.data2);
 
         picker1value = this.data1;
-        picker1value = this.data2;
+        picker2value = this.data2;
 
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
