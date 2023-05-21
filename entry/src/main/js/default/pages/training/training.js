@@ -39,17 +39,21 @@ export default {
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
 
-        // if (picker2value == 'S') {
-
-        // }
-
-        if (picker1value == '1') {
-            picker1seconds = 60;
-        } else if (picker1value == '2') {
-            picker1seconds = 120;
-        } else if (picker1value == '3') {
-            picker1seconds = 180;
+        if (picker2value == '+') {
+            picker2seconds = 6;
+        } else if (picker2value == '++') {
+            picker2seconds = 4;
+        } else if (picker2value == '+++') {
+            picker2seconds = 2;
         }
+
+        // if (picker1value == '1') {
+        //     picker1seconds = 60;
+        // } else if (picker1value == '2') {
+        //     picker1seconds = 120;
+        // } else if (picker1value == '3') {
+        //     picker1seconds = 180;
+        // }
 
 
     },
@@ -69,6 +73,7 @@ export default {
         console.log("training.js/onShow() is evoked");
 
         timer1 = setInterval(this.run1, 1000);
+        timer2 = setInterval(this.run2, picker2seconds * 1000);
     },
     onDestroy() {
         console.log("training.js/onDestroy() is evoked");
