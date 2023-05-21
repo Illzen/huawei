@@ -17,6 +17,9 @@ export default {
         seconds: 0,
         isShow: true,
         breath: "breath in",
+        percent: "0",
+        duration: "",
+        count: "",
     },
     clickAction() {
         clearInterval(timer1);
@@ -42,6 +45,8 @@ export default {
 
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
+        this.duration = picker2seconds + "s";
+        this.count = (picker1seconds / picker2seconds).toString();
 
         if (picker2value == '+') {
             picker2seconds = 6;
@@ -94,7 +99,7 @@ export default {
             if (this.breath == 'breath in') {
                 this.breath = 'breath out';
             } else if (this.breath == 'breath out') {
-                this.breath = 'breath in'
+                this.breath = 'breath in';
             }
         }
     },

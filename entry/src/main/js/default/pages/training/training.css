@@ -27,3 +27,19 @@
     font-size: 30px;
     text-align: center;
 }
+
+.img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: aniname;
+}
+
+@keyframes aniname {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
