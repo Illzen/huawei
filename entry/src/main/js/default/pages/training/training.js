@@ -40,8 +40,8 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
-        picker1value = this.data1;
-        picker2value = this.data2;
+        picker1value = this.key1;
+        picker2value = this.key2;
 
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
@@ -49,11 +49,11 @@ export default {
         this.count = (picker1seconds / picker2seconds).toString();
 
         if (picker2value == '+') {
-            picker2seconds = 6;
+            picker2seconds = 12;
         } else if (picker2value == '++') {
-            picker2seconds = 4;
+            picker2seconds = 24;
         } else if (picker2value == '+++') {
-            picker2seconds = 2;
+            picker2seconds = 36;
         }
 
         // if (picker1value == '1') {
