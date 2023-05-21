@@ -16,7 +16,7 @@ export default {
     data: {
         seconds: 0,
         isShow: true,
-        breath: "breath in",
+        breath: "Breath in",
         percent: "0",
         duration: "",
         count: "",
@@ -40,8 +40,13 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
-        picker1value = this.key1;
-        picker2value = this.key2;
+//        picker1value = this.key1;
+//        picker2value = this.key2;
+
+        // To breathe in
+        picker1value = this.data1;
+        picker2value = this.data2;
+
 
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
@@ -63,7 +68,6 @@ export default {
         // } else if (picker1value == '3') {
         //     picker1seconds = 180;
         // }
-
 
     },
     run1() {
@@ -91,15 +95,18 @@ export default {
 
     run2() {
         counter++;
+        console.log(picker1seconds)
+        console.log(picker2seconds)
+        console.log(counter)
         if (counter = picker1seconds / picker2seconds) {
             clearInterval(timer2);
             timer2 = null;
             this.breath = 'Done';
         } else {
-            if (this.breath == 'breath in') {
-                this.breath = 'breath out';
-            } else if (this.breath == 'breath out') {
-                this.breath = 'breath in';
+            if (this.breath == 'Breathe in') {
+                this.breath = 'Breathe out';
+            } else if (this.breath == 'Breathe out') {
+                this.breath = 'Breathe in'
             }
         }
     },

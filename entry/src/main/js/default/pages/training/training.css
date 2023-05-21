@@ -23,7 +23,8 @@
 .img {
     width: 32px;
     height: 32px;
-    margin-bottom: aniname;
+    margin-bottom: 10px;
+    animation-name: aniname;
 }
 
 @keyframes aniname {
