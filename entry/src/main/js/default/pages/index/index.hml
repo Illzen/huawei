@@ -2,7 +2,7 @@
     <div class="container2">
         <picker-view class="pv1" range="{{picker1range}}" />
         <text class="txt">
-            Index Page
+            min
         </text>
         <img src="/common/hm.png" class="img /">
         <picker-view class="pv2" range="{{picker2range}}" />
