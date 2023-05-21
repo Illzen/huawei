@@ -2,11 +2,12 @@ import router from '@system.router';
 
 export default {
     data: {
-        title: 'World'
+        // title: 'World'
     },
     clickAction() {
         router.replace({
-            uri: 'pages/training/training'
-        });
+            uri: 'pages/index/index'
+        }
+        );
     }
 }
