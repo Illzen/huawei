@@ -1,23 +1,17 @@
 {
   "app": {
-    "bundleName": "com.example.huawei",
     "vendor": "example",
+    "bundleName": "com.example.huawei",
     "version": {
       "code": 1000000,
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {
-  },
+  "deviceConfig": {},
   "module": {
     "deviceType": [
       "liteWearable"
     ],
-    "distro": {
-      "deliveryWithInstall": true,
-      "moduleName": "entry",
-      "moduleType": "entry"
-    },
     "abilities": [
       {
         "name": "default",
@@ -26,10 +20,16 @@
         "type": "page"
       }
     ],
+    "distro": {
+      "moduleType": "entry",
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
     "js": [
       {
         "pages": [
-          "pages/index/index"
+          "pages/index/index",
+          "pages/training/training"
         ],
         "name": "default"
       }
