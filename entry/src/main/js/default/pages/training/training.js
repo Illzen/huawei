@@ -91,15 +91,18 @@ export default {
 
     run2() {
         counter++;
+        console.log(picker1seconds)
+        console.log(picker2seconds)
+        console.log(counter)
         if (counter = picker1seconds / picker2seconds) {
             clearInterval(timer2);
             timer2 = null;
             this.breath = 'Done';
         } else {
-            if (this.breath == 'breath in') {
-                this.breath = 'breath out';
-            } else if (this.breath == 'breath out') {
-                this.breath = 'breath in';
+            if (this.breath == 'Breathe in') {
+                this.breath = 'Breathe out';
+            } else if (this.breath == 'Breathe out') {
+                this.breath = 'Breathe in'
             }
         }
     },
