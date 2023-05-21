@@ -1,6 +1,0 @@
-<div class="container">
-    <text class="txt">
-        Training Page
-    </text>
-    <input type="button" name="back" value="previous" class="btn" onclick="clickAction" />
-</div>
