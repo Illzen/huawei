@@ -2,5 +2,5 @@
     <text class="txt">
         Keep for {{seconds}}s
     </text>
-    <input type="button" name="Restart" value="previous" class="btn" onclick="clickAction" />
+    <input type="button" name="Restart_btn" value="Restart" class="btn" onclick="clickAction" />
 </div>
