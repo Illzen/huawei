@@ -11,7 +11,8 @@ export default {
     },
     clickAction() {
         router.replace({
-            uri: 'pages/training/training',
+             uri: 'pages/training/training',
+//            uri: 'pages/countdown/countdown',
             params: {
                 "data1": picker1value,
                 "data2": picker2value
