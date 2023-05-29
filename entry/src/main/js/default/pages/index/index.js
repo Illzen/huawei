@@ -23,7 +23,8 @@ export default {
     onInit() {
         console.log("index.js/onInit() is evoked");
         router.replace({
-            uri: "pages/report2/report2",
+            // uri: "pages/report2/report2",
+            uri: "pages/report3/report3",
         });
     },
     onReady() {

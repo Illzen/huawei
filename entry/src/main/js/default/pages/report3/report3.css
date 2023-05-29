@@ -1,0 +1,84 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 454px;
+    height: 454px;
+}
+
+.title-container {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 130px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.stack {
+    width: 340px;
+    height: 150px;
+}
+
+.chart-container {
+    width: 340px;
+    height: 150px;
+}
+
+.time-container {
+    width: 340px;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    font-size: 18px;
+    color: gray;
+    letter-spacing: 0px;
+}
+
+.activities-list {
+    width: 180px;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.activitiy {
+    width: 175px;
+    height: 45px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .list { */
+/*     flex-direction: row; */
+/*     width: 200px; */
+/*     height: 45px; */
+/* } */
+
+/* .list-item { */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     width: 100px; */
+/*     height: 45px; */
+/* } */
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.type {
+    font-size: 24px;
+    letter-spacing: 0px;
+    margin-right: 10px;
+}
+
+.percent {
+    font-size: 30px;
+    letter-spacing: 0px;
+}
