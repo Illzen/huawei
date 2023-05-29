@@ -13,7 +13,7 @@ export default {
         console.log("Button is clicked !")
         router.replace({
             uri: 'pages/countdown1/countdown1',
-//            uri: 'pages/training/training',
+            //            uri: 'pages/training/training',
             params: {
                 "data1": picker1value,
                 "data2": picker2value
@@ -22,6 +22,9 @@ export default {
     },
     onInit() {
         console.log("index.js/onInit() is evoked");
+        router.replace({
+            uri: "pages/report2/report2",
+        });
     },
     onReady() {
         console.log("index.js/onReady() is evoked");
