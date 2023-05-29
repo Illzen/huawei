@@ -52,6 +52,7 @@ export default {
         this.seconds = picker1seconds;
         this.duration = picker2seconds + "s";
         this.count = (picker1seconds / picker2seconds).toString();
+//        console.log("count" + this.count) // count is infinity
 
         if (picker2value == '+') {
             picker2seconds = 12;
