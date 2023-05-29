@@ -16,7 +16,7 @@ export default {
     data: {
         seconds: 0,
         isShow: true,
-        breath: "Breath in",
+        breath: "Breathe in",
         percent: "0",
         duration: "",
         count: "",
@@ -40,19 +40,12 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
-//        picker1value = this.key1;
-//        picker2value = this.key2;
 
         // To breathe in
         picker1value = this.data1;
         picker2value = this.data2;
 
-
         picker1seconds = picker1value * 60;
-        this.seconds = picker1seconds;
-        this.duration = picker2seconds + "s";
-        this.count = (picker1seconds / picker2seconds).toString();
-//        console.log("count" + this.count) // count is infinity
 
         if (picker2value == '+') {
             picker2seconds = 12;
@@ -61,6 +54,10 @@ export default {
         } else if (picker2value == '+++') {
             picker2seconds = 36;
         }
+
+        this.seconds = picker1seconds;
+        this.duration = picker2seconds + "s";
+        this.count = (picker1seconds / picker2seconds).toString();
 
         // if (picker1value == '1') {
         //     picker1seconds = 60;
@@ -96,10 +93,10 @@ export default {
 
     run2() {
         counter++;
-        console.log(picker1seconds)
-        console.log(picker2seconds)
+        console.log(this.picker1seconds)
+        console.log(this.picker2seconds)
         console.log(counter)
-        if (counter = picker1seconds / picker2seconds) {
+        if (counter == picker1seconds / picker2seconds) {
             clearInterval(timer2);
             timer2 = null;
             this.breath = 'Done';
