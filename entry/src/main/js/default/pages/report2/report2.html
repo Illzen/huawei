@@ -1,5 +1,33 @@
 <div class="container" onswipe="toNextPage">
-    <text class="title">
-        2nd training report
-    </text>
+    <div class="title-container">
+        <text class="title">
+            Heart Rate
+        </text>
+    </div>
+
+    <div class="chart">
+
+    </div>
+
+    <list class="list">
+        <list-item class="list-item" for="{{maxmin}}">
+            <image class="icon" src="/common/{{$item.iconName}}.png" />
+            <text class="maxmin">
+                {{$item.mValue}}
+            </text>
+        </list-item>
+    </list>
+
+    <div class="average-container">
+        <text class="average">
+            Average
+        </text>
+        <text class="average-number">
+            {{average}}
+        </text>
+        <text class="average">
+            /m
+        </text>
+    </div>
+
 </div>

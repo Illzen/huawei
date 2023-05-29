@@ -1,16 +1,71 @@
 .container {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    left: 0px;
-    top: 0px;
+    /* left: 0px; */
+    /* top: 0px; */
     width: 454px;
     height: 454px;
 }
 
+.title-container {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 130px;
+}
+
 .title {
     font-size: 30px;
-    text-align: center;
-    width: 454px;
-    margin: 100px
+    margin-top: 40px;
+    /* text-align: center; */
+    /* width: 454px; */
+    /* height: 100px; */
+}
+
+.chart {
+    width: 400px;
+    height: 180px;
+}
+
+.list {
+    flex-direction: row;
+    width: 200px;
+    height: 45px;
+}
+
+.list-item {
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.maxmin {
+    width: 50px;
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+.average-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 55px;
+}
+
+.average {
+    font-size: 24px;
+    color: gray;
+}
+
+.average-number {
+    font-size: 30px;
+    letter-spacing: 0px;
 }

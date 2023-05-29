@@ -1,7 +1,37 @@
 import router from '@system.router';
 export default {
     data: {
-        title: ""
+        maxmin: [{
+                iconName: 'max',
+                mValue: '0'
+            },
+            {
+                iconName: 'min',
+                mValue: '0'
+            }
+        ],
+        average: 0,
+    },
+    onInit() {
+        let heartRates = [];
+        for (let i = 0; i < 100; i++) {
+            heartRates.push(this.getRandomInt(73, 159));
+        }
+        this.countMaxMinAverage(heartRates);
+    },
+    getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
+    countMaxMinAverage(heartRates) {
+        this.maxmin[0].mValue = Math.max.apply(null, heartRates);
+        this.maxmin[1].mValue = Math.max.apply(null, heartRates);
+
+        let sum = 0;
+        for (let index = 0; index < heartRates.length; index++) {
+            sum += heartRates[index];
+        }
+        this.average = Math.round(sum / heartRates.length);
+
     },
     toNextPage(e) {
         switch (e.direction) {
@@ -15,9 +45,5 @@ export default {
                     uri: 'pages/report1/report1'
                 });
         }
-    }
-
-    onInit() {
-        this.title = "Hello World";
-    }
+    },
 }
