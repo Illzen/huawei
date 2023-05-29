@@ -46,13 +46,17 @@ export default {
         picker2value = this.data2;
 
         picker1seconds = picker1value * 60;
+        this.seconds = picker1seconds;
+        this.duration = picker2seconds + "s";
+        this.count = (picker1seconds / picker2seconds).toString();
+        //        console.log("count" + this.count) // count is infinity
 
         if (picker2value == '+') {
-            picker2seconds = 12;
+            picker2seconds = 60;
         } else if (picker2value == '++') {
-            picker2seconds = 24;
+            picker2seconds = 120;
         } else if (picker2value == '+++') {
-            picker2seconds = 36;
+            picker2seconds = 180;
         }
 
         this.seconds = picker1seconds;

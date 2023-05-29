@@ -1,0 +1,13 @@
+<div class="container">
+    <image class="img" src="{{imgsrc}}" />
+    <text class="txt">
+        Stay still
+    </text>
+    <text class="txt">
+        Follow the instruction after {{seconds}}s
+    <!--        Follow the instruction after 3s-->
+    </text>
+    <text class="txt">
+        Breathing in and breathing out
+    </text>
+</div>

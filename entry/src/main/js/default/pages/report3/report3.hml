@@ -1,0 +1,31 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            Activity
+        </text>
+    </div>
+
+    <!-- <chart class="chart" options="{{options}}" datasets="{{datasets}}" /> -->
+    <div class="chart-container">
+
+    </div>
+
+
+    <div class="time-container">
+        <text class="time" for="{{timeRange}}">
+            {{$item}}
+        </text>
+    </div>
+
+    <list class="activities-list">
+        <list-item class="activity" for="{{activityData}}">
+            <image class="icon" src="/common/{{$item.iconName}}-circle.png" />
+            <text class="type">
+                {{$item.text}}
+            </text>
+            <text class="percent">
+                {{$item.percent}}%
+            </text>
+        </list-item>
+    </list>
+</div>

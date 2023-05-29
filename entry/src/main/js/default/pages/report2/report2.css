@@ -24,30 +24,48 @@
     /* height: 100px; */
 }
 
-.state-wrapper {
-    width: 320px;
-    height: 220px;
+.chart {
+    width: 400px;
+    height: 180px;
 }
 
-.state-item {
-    width: 320px;
-    height: 55px;
-    flex-direction: column;
+.list {
+    flex-direction: row;
+    width: 200px;
+    height: 45px;
 }
 
-.state {
+.list-item {
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 45px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.maxmin {
+    width: 50px;
     font-size: 24px;
-    color: aqua;
+    letter-spacing: 0px;
 }
 
-.state-percent {
-    width: 320px;
-    height: 25px;
+.average-container {
     justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 55px;
 }
 
-.progress-bar {
-    width: 320px;
-    height: 5px;
-    margin-top: 5px;
+.average {
+    font-size: 24px;
+    color: gray;
+}
+
+.average-number {
+    font-size: 30px;
+    letter-spacing: 0px;
 }
