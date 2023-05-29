@@ -40,8 +40,8 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
-//        picker1value = this.key1;
-//        picker2value = this.key2;
+        //        picker1value = this.key1;
+        //        picker2value = this.key2;
 
         // To breathe in
         picker1value = this.data1;
@@ -52,14 +52,14 @@ export default {
         this.seconds = picker1seconds;
         this.duration = picker2seconds + "s";
         this.count = (picker1seconds / picker2seconds).toString();
-//        console.log("count" + this.count) // count is infinity
+        //        console.log("count" + this.count) // count is infinity
 
         if (picker2value == '+') {
-            picker2seconds = 12;
+            picker2seconds = 60;
         } else if (picker2value == '++') {
-            picker2seconds = 24;
+            picker2seconds = 120;
         } else if (picker2value == '+++') {
-            picker2seconds = 36;
+            picker2seconds = 180;
         }
 
         // if (picker1value == '1') {
