@@ -36,6 +36,7 @@
                     <!-- {{states[3]}} -->
                 </text>
             </div>
+            <progress class="progress-bar" percent="{{$item.percent}}" style="color:{{$item.color}};" />
         </list-item>
     </list>
 </div>

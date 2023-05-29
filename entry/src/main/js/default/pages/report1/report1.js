@@ -2,19 +2,23 @@ export default {
     data: {
         states: [{
                 state: 'Desperate 80-99',
-                percent: 0
+                percent: 0,
+                color: '#ffa500'
             },
             {
                 state: 'Tense 60-79',
-                percent: 0
+                percent: 0,
+                color: '#ffff00'
             },
             {
                 state: 'Normal 30-59',
-                percent: 0
+                percent: 0,
+                color: '#00ffff'
             },
             {
                 state: 'Relax 1-29',
-                percent: 0
+                percent: 0,
+                color: '#0000ff'
             },
         ]
 
