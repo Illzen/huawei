@@ -5,11 +5,15 @@
         </text>
     </div>
 
-    <!-- <chart class="chart" options="{{options}}" datasets="{{datasets}}" /> -->
-    <div class="chart-container">
+<!--    <div class="chart-container">-->
 
-    </div>
+<!--    </div>-->
 
+    <stack class="stack">
+        <chart class="chart-container" type="bar" options="{{options}}" datasets="{{datasetsStatic}}" />
+        <chart class="chart-container" type="bar" options="{{options}}" datasets="{{datasets}}" />
+
+    </stack>
 
     <div class="time-container">
         <text class="time" for="{{timeRange}}">

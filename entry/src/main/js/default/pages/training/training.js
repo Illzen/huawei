@@ -37,20 +37,16 @@ export default {
     },
     onInit() {
         console.log("training.js/onInit() is evoked");
-        console.log("Accepted left selector: " + this.data1);
-        console.log("Accepted right selector: " + this.data2);
+        console.log("Accepted left selector: " + this.key1);
+        console.log("Accepted right selector: " + this.key2);
 
 
         // To breathe in
-        picker1value = this.data1;
-        picker2value = this.data2;
-
-        picker1seconds = picker1value * 60;
-        this.seconds = picker1seconds;
-        this.duration = picker2seconds + "s";
-        this.count = (picker1seconds / picker2seconds).toString();
-        //        console.log("count" + this.count) // count is infinity
-
+        // Why the fuck is it key, at least like when
+        picker1value = this.key1;
+        picker2value = this.key2;
+//        console.log("Picker1value: " + picker1value)
+//        console.log("Picker2value: " + picker2value)
         if (picker2value == '+') {
             picker2seconds = 60;
         } else if (picker2value == '++') {
@@ -58,6 +54,13 @@ export default {
         } else if (picker2value == '+++') {
             picker2seconds = 180;
         }
+//        console.log("Picker1value: " + picker1value)
+        picker1seconds = picker1value * 60;
+//        console.log("Picker1seconds: " + picker1seconds)
+        this.seconds = picker1seconds;
+        this.duration = picker2seconds + "s";
+        this.count = (picker1seconds / picker2seconds).toString();
+
 
         this.seconds = picker1seconds;
         this.duration = picker2seconds + "s";
@@ -97,8 +100,8 @@ export default {
 
     run2() {
         counter++;
-        console.log(this.picker1seconds)
-        console.log(this.picker2seconds)
+        console.log(picker1seconds)
+        console.log(picker2seconds)
         console.log(counter)
         if (counter == picker1seconds / picker2seconds) {
             clearInterval(timer2);
