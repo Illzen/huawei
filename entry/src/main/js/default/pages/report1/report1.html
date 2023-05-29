@@ -1,0 +1,42 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            Pressure
+        </text>
+    </div>
+
+
+    <list class="state-wrapper">
+        <list-item class="state-item" for="{{states}}">
+            <div class="state-percent">
+                <text class="state">
+                    {{$item.state}}
+                </text>
+
+                <text class="state">
+                    {{$item.state}}%
+                    <!-- {{states[0]}} -->
+                    <!-- </text> -->
+                    <!-- </list-item> -->
+
+                    <!-- <list-item class="state-item"> -->
+                    <!-- <text class="state"> -->
+                    <!-- {{states[1]}} -->
+                    <!-- </text> -->
+                    <!-- </list-item> -->
+
+                    <!-- <list-item class="state-item"> -->
+                    <!-- <text class="state"> -->
+                    <!-- {{states[2]}} -->
+                    <!-- </text> -->
+                    <!-- </list-item> -->
+
+                    <!-- <list-item class="state-item"> -->
+                    <!-- <text class="state"> -->
+                    <!-- {{states[3]}} -->
+                </text>
+            </div>
+            <progress class="progress-bar" percent="{{$item.percent}}" style="color:{{$item.color}};" />
+        </list-item>
+    </list>
+</div>

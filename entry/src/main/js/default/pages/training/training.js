@@ -16,8 +16,10 @@ export default {
     data: {
         seconds: 0,
         isShow: true,
-        breath: "Breathe in",
+        breath: "Breath in",
         percent: "0",
+        duration: "",
+        count: "",
     },
     clickAction() {
         clearInterval(timer1);
@@ -38,18 +40,26 @@ export default {
         console.log("Accepted left selector: " + this.data1);
         console.log("Accepted right selector: " + this.data2);
 
+        //        picker1value = this.key1;
+        //        picker2value = this.key2;
+
+        // To breathe in
         picker1value = this.data1;
         picker2value = this.data2;
 
+
         picker1seconds = picker1value * 60;
         this.seconds = picker1seconds;
+        this.duration = picker2seconds + "s";
+        this.count = (picker1seconds / picker2seconds).toString();
+        //        console.log("count" + this.count) // count is infinity
 
         if (picker2value == '+') {
-            picker2seconds = 6;
+            picker2seconds = 60;
         } else if (picker2value == '++') {
-            picker2seconds = 4;
+            picker2seconds = 120;
         } else if (picker2value == '+++') {
-            picker2seconds = 2;
+            picker2seconds = 180;
         }
 
         // if (picker1value == '1') {
@@ -59,7 +69,6 @@ export default {
         // } else if (picker1value == '3') {
         //     picker1seconds = 180;
         // }
-
 
     },
     run1() {
@@ -114,6 +123,13 @@ export default {
             clearInterval(timer3);
             timer3 = null;
             this.percent = '100';
+        }
+    },
+    toReport1Page(e) {
+        if (e.direction == 'right') {
+            router.replace({
+                uri: 'pages/report1/report1'
+            });
         }
     }
 }
