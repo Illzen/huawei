@@ -38,3 +38,9 @@
     font-size: 24px;
     color: aqua;
 }
+
+.state-percent {
+    width: 320px;
+    height: 55px;
+    justify-content: space-between;
+}
