@@ -23,3 +23,18 @@
     /* width: 454px; */
     /* height: 100px; */
 }
+
+.state-wrapper {
+    width: 320px;
+    height: 220px;
+}
+
+.state-item {
+    width: 320px;
+    height: 55px;
+}
+
+.state {
+    font-size: 24px;
+    color: aqua;
+}
