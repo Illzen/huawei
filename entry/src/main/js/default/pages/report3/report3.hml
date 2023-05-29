@@ -6,6 +6,9 @@
     </div>
 
     <!-- <chart class="chart" options="{{options}}" datasets="{{datasets}}" /> -->
+    <div class="chart-container">
+
+    </div>
 
 
     <div class="time-container">
