@@ -23,7 +23,7 @@ export default {
         ]
 
     },
-    oneInit() {
+    onInit() {
         let stateData = [];
         for (let i = 0; i < 20; i++) {
             stateData.push(this.getRandomInt(1, 99));
