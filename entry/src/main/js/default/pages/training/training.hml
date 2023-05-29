@@ -10,6 +10,11 @@
     <text class="txt3" else>
         Swipe right to check statistics
     </text>
-    
+
     <input type="button" name="Restart_btn" value="Restart" class="btn" onclick="clickAction" />
+</div>
+
+<div class="container" onswipe="toReport1Page">
+    <image class="img" src='/common/2.png' style="animation-duration:{{duration}};
+                                                      animation-iteration-count:{{count}};" />
 </div>
