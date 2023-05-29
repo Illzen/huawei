@@ -16,6 +16,7 @@ export default {
         if (counter != 0) {
             this.imgsrc = "/common/" + "n" + counter.toString() + ".png";
             this.seconds = counter.toString();
+            console.log(this.imgsrc)
         } else {
             this.imgsrc = "";
             this.seconds = "";
@@ -39,6 +40,7 @@ export default {
         pv2 = this.data2;
 
         this.imgsrc = "/common/" + "n" + counter.toString() + ".png";
+        console.log(this.imgsrc)
         this.seconds = counter.toString();
     },
     onShow() {
