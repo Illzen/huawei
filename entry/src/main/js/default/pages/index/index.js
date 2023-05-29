@@ -10,9 +10,10 @@ export default {
         // title: "World"
     },
     clickAction() {
+        console.log("Button is clicked !")
         router.replace({
-             uri: 'pages/training/training',
-//            uri: 'pages/countdown/countdown',
+            uri: 'pages/countdown1/countdown1',
+//            uri: 'pages/training/training',
             params: {
                 "data1": picker1value,
                 "data2": picker2value
