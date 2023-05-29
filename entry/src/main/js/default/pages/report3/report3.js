@@ -22,16 +22,29 @@ export default {
             activities.push(rand);
             activitiesStatic.push(Math.abs(rand - 1));
         }
-        let heartRates = [];
+        this.datasets[0].data = activities;
+        this.datasetsStatistic[0].data = activitiesStatic;
+        this.countActivityPercent(activities);
+//        let heartRates = [];
         // TODO page 4 lab26
         // for (let i = 0; i < 100; i++) {
         //     heartRates.push(this.getRandomInt(73, 159));
         // }
-        this.datasets[0].data = heartRates;
-        this.countMaxMinAverage(heartRates);
+//        this.datasets[0].data = heartRates;
+//        this.countMaxMinAverage(heartRates);
     },
     getRandomZeroOrOne() {
         return Math.floor(Math.random() + 0.5);
+    },
+    countActivityPercent(activities){
+        let count = 0;
+        for (let index = 0; index < activities.length; index++) {
+            if (activities[index] == 1) {
+                count++;
+            }
+        }
+        this.activityData[0].percent = Math.round(count / activities.length * 100);
+        this.activityData[1].percent = 100 - this.activityData[0].percent;
     },
     getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
