@@ -11,12 +11,24 @@ export default {
             }
         ],
         average: 0,
+        options: {
+            xAxis: {},
+            yAxis: {
+                min: 0,
+                max: 160
+            }
+        },
+        datasets: [{
+            gradient: true,
+            data: []
+        }]
     },
     onInit() {
         let heartRates = [];
         for (let i = 0; i < 100; i++) {
             heartRates.push(this.getRandomInt(73, 159));
         }
+        this.datasets[0].data = heartRates;
         this.countMaxMinAverage(heartRates);
     },
     getRandomInt(min, max) {
