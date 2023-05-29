@@ -12,7 +12,27 @@ export default {
                 text: "still",
                 percent: 0
             }
-        ]
+        ],
+        options: {
+            xAxis: {
+                axisTick: 20
+            },
+            yAxis: {
+                max: 1,
+                axisTick: 1,
+            }
+        },
+        datasets: [
+            {
+                data: []
+            },
+        ],
+        datasetsStatic: [
+            {
+                fillColor:"#696969",
+                data: []
+            }
+        ],
     },
     onInit() {
         let activities = [];

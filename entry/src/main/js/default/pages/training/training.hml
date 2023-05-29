@@ -1,5 +1,5 @@
 <div class="container">
-    <image class='img' src='/common11/1.png' style="animation-duration:{{duration}};
+    <image class='img' src='/common/1.png' style="animation-duration:{{duration}};
         animation-iteration-count:{{count}};" />
     <text class="txt1">
         {{breath}}({{percent}}%)
@@ -8,7 +8,7 @@
         Keeps for another {{seconds}}s
     </text>
     <text class="txt3" else>
-        Swipe right to check statistics
+        Swipe >>
     </text>
 
     <input type="button" name="Restart_btn" value="Restart" class="btn" onclick="clickAction" />

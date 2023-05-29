@@ -25,6 +25,7 @@
     height: 32px;
     margin-bottom: 10px;
     animation-name: aniname;
+    animation: aniname;
 }
 
 @keyframes aniname {

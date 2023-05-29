@@ -33,6 +33,7 @@
           "pages/countdown/countdown",
           "pages/countdown1/countdown1",
           "pages/report2/report2",
+          "pages/report3/report3",
           "pages/report01/report01"
         ],
         "name": "default"
